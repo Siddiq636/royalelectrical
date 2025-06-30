@@ -1,0 +1,64 @@
+.healthy-habits-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.healthy-habits-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.healthy-habits-text {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.counter-item {
+  margin: 0 15px;
+}
+
+.counter-number {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #000000; /* Black color */
+  margin-bottom: 5px;
+}
+
+.counter-label {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .healthy-habits-title {
+    font-size: 2rem;
+  }
+
+  .healthy-habits-text {
+    font-size: 1rem;
+  }
+
+  .healthy-habits-section {
+    padding: 60px 0;
+  }
+
+  .counter-item {
+    margin: 15px 0; /* Add vertical margin for stacking */
+  }
+
+  .counter-number {
+    font-size: 4rem; /* Smaller font size for mobile */
+  }
+
+  .counter-label {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .healthy-habits-section .row > .col-lg-6:first-child {
+    flex-direction: column; /* Stack counters vertically */
+  }
+}

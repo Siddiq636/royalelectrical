@@ -1,0 +1,45 @@
+.partners-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.partners-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.projects-carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.projects-carousel-track {
+  display: flex;
+  width: fit-content; /* Allow content to define width */
+  animation: scroll-left 30s linear infinite; /* Adjust duration as needed */
+}
+
+.project-name-item-wrapper {
+  flex-shrink: 0; /* Prevent items from shrinking */
+  margin-right: 30px; /* Space between items */
+}
+
+.project-name-item {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 25px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%); /* Move half the duplicated content */
+  }
+}

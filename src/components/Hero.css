@@ -1,0 +1,94 @@
+.hero-section {
+  background-image: url('../../public/images/hero-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  min-height: 600px; /* Adjust as needed */
+  position: relative; /* Needed for pseudo-element positioning */
+  transition: transform 1s ease-out;
+}
+
+.hero-section.is-visible {
+  transform: scale(1.05);
+}
+
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 0; /* Place behind content */
+}
+
+.hero-section .container {
+  position: relative; /* Ensure content is above the overlay */
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #ffffff;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.animated-line {
+  display: block;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.hero-section.is-visible .animated-line {
+  animation: slideInFromLeft 1s forwards;
+}
+
+@keyframes slideInFromLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hero-image-placeholder {
+  width: 100%;
+  max-width: 500px; /* Adjust as needed */
+  height: auto;
+  background-color: #e9ecef; /* Placeholder background */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hero-image-placeholder img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-section {
+    padding: 60px 0;
+  }
+}
+

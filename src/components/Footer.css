@@ -1,0 +1,52 @@
+.wellifize-footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+.footer-logo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.wellifize-footer .nav-link {
+  color: #cccccc;
+  padding: 0.2rem 0;
+}
+
+.wellifize-footer .nav-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    font-size: 2rem;
+  }
+
+  .footer-heading {
+    font-size: 1rem;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
+
+  .wellifize-footer {
+    padding: 40px 0;
+  }
+}
+

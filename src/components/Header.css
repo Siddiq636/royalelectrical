@@ -1,0 +1,78 @@
+.wellifize-navbar {
+  background-color: #ffffff;
+  padding: 8rem 0; /* Increased padding for broader header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center; /* Vertically center content */
+  margin-bottom: 1rem; /* Add margin to create gap below header */
+}
+
+.wellifize-logo {
+  font-weight: bold;
+  font-size: 4rem; /* Adjusted font size */
+  color: #333;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wellifize-navbar .ms-auto {
+  position: relative; /* Needed for absolute positioning of the hover indicator */
+}
+
+.wellifize-navbar .nav-link {
+  color: #555;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  position: relative; /* Ensure links are above the indicator */
+  z-index: 1;
+  transition: color 0.3s ease-in-out; /* Smooth transition for text color */
+  white-space: nowrap;
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Vertically center content */
+}
+
+.wellifize-navbar .nav-link.hovered {
+  color: #ffffff; /* Text color when hovered */
+}
+
+.hover-indicator {
+  position: absolute;
+  background-color: black;
+  border-radius: 20px; /* More rounded rectangle for covering text */
+  transition: all 0.3s ease-in-out; /* Smooth transition for movement and size */
+  z-index: 0;
+  padding: 0.5rem 1.5rem; /* Adjust padding to cover text nicely */
+  box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+@media (max-width: 992px) {
+  .wellifize-navbar .nav-link {
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+  }
+
+  .hover-indicator {
+    display: none; /* Hide the hover indicator on smaller screens */
+  }
+
+  .wellifize-navbar .navbar-collapse {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
