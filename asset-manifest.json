@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/royalelectrical/static/css/main.0d0c10f8.css",
-    "main.js": "/royalelectrical/static/js/main.756d7856.js",
+    "main.js": "/royalelectrical/static/js/main.90ea7c1e.js",
     "static/media/hero-background.png": "/royalelectrical/static/media/hero-background.592593914c178ce6f3b2.png",
     "static/media/general-info-background.jpg": "/royalelectrical/static/media/general-info-background.9905377e7b7093ba2a4e.jpg",
     "index.html": "/royalelectrical/index.html",
     "main.0d0c10f8.css.map": "/royalelectrical/static/css/main.0d0c10f8.css.map",
-    "main.756d7856.js.map": "/royalelectrical/static/js/main.756d7856.js.map"
+    "main.90ea7c1e.js.map": "/royalelectrical/static/js/main.90ea7c1e.js.map"
   },
   "entrypoints": [
     "static/css/main.0d0c10f8.css",
-    "static/js/main.756d7856.js"
+    "static/js/main.90ea7c1e.js"
   ]
 }
