@@ -18,12 +18,7 @@ function ExclusiveAccess() {
               PAN No.: ABHFR6762J
             </p>
           </Col>
-          <Col lg={6} className="d-flex justify-content-center justify-content-lg-end">
-            {/* Placeholder for the image */}
-            <div className="exclusive-access-image-placeholder">
-              <img src="/images/exclusive-access.png" alt="Exclusive Access" className="img-fluid" />
-            </div>
-          </Col>
+          
         </Row>
       </Container>
     </section>
